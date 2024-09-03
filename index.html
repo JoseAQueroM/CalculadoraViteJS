@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="icon" href="/assets/vite-DcBtz0py.svg" type="image/x-icon">
+  <link rel="stylesheet" crossorigin href="/assets/index-B4xkRs4T.css">
+</head>
+<body>
+
+    <div class="calculadora">
+
+
+        <form name="calculator">
+        <input type="textfield" name="ans" value="" autocomplete="off" id="display" readonly>
+
+        <div class="botones">
+
+            <input type="button" onclick="document.calculator.ans.value+='7'" class="numero" value="7">
+            <input type="button" onclick="document.calculator.ans.value+='8'" class="numero" value="8">
+            <input type="button" onclick="document.calculator.ans.value+='9'" class="numero" value="9">
+            <input type="button" onclick="document.calculator.ans.value+='+'" class="numero" value="+">
+            <input type="button" onclick="document.calculator.ans.value+='4'" class="numero" value="4">
+            <input type="button" onclick="document.calculator.ans.value+='5'" class="numero" value="5">
+            <input type="button" onclick="document.calculator.ans.value+='6'" class="numero" value="6">
+            <input type="button" onclick="document.calculator.ans.value+='-'" class="numero" value="-">
+            <input type="button" onclick="document.calculator.ans.value+='1'" class="numero" value="1">
+            <input type="button" onclick="document.calculator.ans.value+='2'" class="numero" value="2">
+            <input type="button" onclick="document.calculator.ans.value+='3'" class="numero" value="3">
+            <input type="button" onclick="document.calculator.ans.value+='*'" class="numero" value="*">
+            <input type="button" onclick="document.calculator.ans.value+='0'" class="numero" value="0">
+            <input type="reset"  class="numero" value="C">
+            <input type="button" onclick="document.calculator.ans.value+='/'" class="numero" value="/">
+            <input type="button" class="numero" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)" >
+        </div>
+    </form>
+    </div>
+</body>
+</html>
